@@ -1,0 +1,144 @@
+div {
+  border: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  color: #030348;
+}
+
+header {
+  height: 15vh;
+  background-color: #759EDA;
+  display: flex;
+  align-items: center;
+}
+
+.form-group {
+  padding-left: 20px;
+}
+
+.form-control {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: inherit;
+  padding: 8px;
+}
+
+.form-control:focus {
+  outline: none;
+  border-bottom: 2px solid #5879C7;
+}
+
+main {
+  padding-top: 30px;
+  height: 80vh;
+  background-color: #9CCEF4;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.main-weather {
+  width: 150px;
+  height: 150px;
+}
+
+.weather-status {
+  margin-top: 10px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.weather-temp {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.weather-temp .bolder {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.humidity-pressure {
+  margin-top: 20px;
+  font-size: 0.8rem;
+}
+
+.humidity-pressure .bolder {
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.weather {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  min-width: 80%;
+  font-size: 0.85rem;
+}
+
+.weather-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.weather-img {
+  width: 75px;
+  height: 75px;
+  margin: 20px 0;
+}
+
+button {
+  background-color: #5879C7;
+  padding: 8px;
+  border: 0;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  height: 50px;
+  width: 180px;
+  color: #030348;
+}
+
+input {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media(max-width: 560px) {
+  #root, .main-div {
+    height: 100%;
+  }
+  header {
+    height: 10%;
+  }
+  main {
+    overflow: auto;
+  }
+  button {
+    margin: 10px 0;
+  }
+  .weather {
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
+  }
+  .weather-item {
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .weather-img {
+    margin: 0 20px;
+  }
+}
